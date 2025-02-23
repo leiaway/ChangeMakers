@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: var(--mplus-font);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #373b3b;
+    color: #ffffff;
+}
+h1 {
+
+    font-size: 6em;
+}
+h2 {
+
+    font-size: 2em;
+
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 3em;
+}
+#top-div{
+    flex: 10%; /* Adjust this value for height */
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#middle-div {
+    flex: 1; /* Takes the remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottom-div {
+    flex: 10%; /* Adjust this value for height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start-button {
+    background-color: #00e4ff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulsate 1.5s infinite;
+}
+
+@keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#chat-container {
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+#left-div {
+    flex: 0 0 45%; /* Left div takes 45% of the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-div {
+    flex: 0 0 55%; /* Right div takes 55% of the width */
+    display: flex;
+    flex-direction: column;
+}
+
+#prompt-div {
+    flex: 0 0 20%; /* Top div for prompt */
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#input-div {
+    flex: 1; /* Bottom div for input */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+#user-input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    height: 75%;
+    width: 90%;
+    justify-content: center;
+}
+
+#send-button {
+    background-color: #00e4ff;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 25%;
+}
+.response-button {
+    background-color: #00e4ff; 
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px; 
+    flex: 1; 
+    max-width: 50%;
+    max-height: 50%;
+    justify-content: center;
+}

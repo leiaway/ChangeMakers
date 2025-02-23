@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDnity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="top-div">
+        <img src="IDnity Logo 1 Transparent.png" alt="Logo" style="max-height: 40%; max-width: 40%; float: left;">
+    </div>
+    <div id="middle-div">
+        <h1>Welcome to IDnity!</h1>
+        <h2>Are you ready to unlock your truth?</h2>
+        <button id="start-button"><h3>Get Started</h3></button>
+    </div>
+    <div id="bottom-div">
+        <img src="IDnity Icon.png" style="max-height: 20%; max-width: 20%;">
+    </div>
+
+    <div id="chat-container" style="display: none;">
+        <div id="left-div">
+            <img src = "ikigai icon.png" style="width: 100%; height: auto;">
+        </div>
+        <div id="right-div">
+            <div id="prompt-div">
+                <h4 id="prompt-header"></h4>
+            </div>
+            <div id="input-div">
+                <textarea id="user-input" placeholder="Enter your response here..." rows="12"></textarea>
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <div id="chat-box" style="display: none;"></div>
+    <script src="script.js"></script>  <!-- Normal script -->
+<script type="module" src="app.js"></script>  <!--Firebase module -->
+</body>
+</html>
