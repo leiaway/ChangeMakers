@@ -1,4 +1,3 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, doc, setDoc} from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
@@ -8,7 +7,7 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDLbggRAXTm7xszYduOv2uLE8AvAhVS2IY",
+  //apiKey: "xxxxx",
   authDomain: "idnity-d8121.firebaseapp.com",
   projectId: "idnity-d8121",
   storageBucket: "idnity-d8121.firebasestorage.app",
